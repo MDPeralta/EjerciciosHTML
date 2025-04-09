@@ -1,0 +1,48 @@
+<!--[A.10] Tabla
+Confeccionar una tabla que muestre en la primera columna los nombre de distintos empleados de una
+compañía y en la segunda el sueldo bruto (la compañía tiene 4 empleados) Disponer en la tabla un título
+(<CAPTION>) representativo. La información a ser mostrada debe tener al menos cinco registros.
+-->
+
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"> <!--Establece el juego de caracteres que utilizará el navegador-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Establece el área de visualización de la página en el navegador
+                                                                                width=device-width: hace que el ancho de la página coincida con 
+                                                                                el ancho de la pantalla del dispositivo.
+                                                                                initial-scale=1.0: establece el nivel de zoom inicial al 100%.-->
+        <meta name="application-name" content="Introducción a HTML 5"> <!--Define el nombre de la aplicación de la cual forma parte el documento-->
+        <meta name="author" content="UTN-fra"> <!--Establece el nombre del autor del documento-->
+        <meta name="description" content="Ejemplos de tags semánticos"> <!--Descripción del documento. Es utilizada por los motores de búsquedas.-->
+        <meta name="generator" content="UTN-fra"> <!--Especifica el nombre del programa con el que se ha creado el documento.-->
+        <meta name="keywords" content="ejemplos, programación, html 5, etc."> <!--Serie de términos o palabras que sirven para establecer categorías 
+                                                                                en la cual el documento web puede ser incluido. Suele ser utilizada
+                                                                                por los motores de búsqueda para establecer búsquedas y categorías 
+                                                                                de los documentos.-->
+        <title>Ejercitacion 10</title>
+    </head>
+
+    <body>
+        <h1>Tabla compañia</h1>
+        <table border="1">
+            <caption>Registro de datos</caption>
+            <tbody>
+                <thead><!-- Agrupa las celdas th de la tabla-->
+                    <th>Nombre</th>
+                    <th>Sueldo Bruto</th>
+                </thead>
+                <tr><!--Define una fila (solo una) en la tabla-->
+                    <td>Mauro</td><td>$985.000</td><!--Define una celda (solo una) en la fila de la tabla-->
+                </tr>
+                <tr><td>Josefina</td><td>$500.000</td></tr>
+                <tr><td>Lucas</td><td>$100.000</td></tr>
+                <tr><td>Araceli</td><td>$10.000</td></tr>
+                <tr><td>Lucia</td><td>$800.000</td></tr>
+                
+            </tbody>
+        </table>
+    </body>
+
+</html>

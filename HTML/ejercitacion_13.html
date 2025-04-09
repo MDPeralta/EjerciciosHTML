@@ -1,0 +1,54 @@
+<!--[A.13] Anclados
+Agregar al ejercicio anterior un link (<A>) que le de acceso al usuario a la página oficial de cada una de las
+confederaciones.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"> <!--Establece el juego de caracteres que utilizará el navegador-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Establece el área de visualización de la página en el navegador
+                                                                                width=device-width: hace que el ancho de la página coincida con 
+                                                                                el ancho de la pantalla del dispositivo.
+                                                                                initial-scale=1.0: establece el nivel de zoom inicial al 100%.-->
+        <meta name="application-name" content="Introducción a HTML 5"> <!--Define el nombre de la aplicación de la cual forma parte el documento-->
+        <meta name="author" content="UTN-fra"> <!--Establece el nombre del autor del documento-->
+        <meta name="description" content="Ejemplos de tags semánticos"> <!--Descripción del documento. Es utilizada por los motores de búsquedas.-->
+        <meta name="generator" content="UTN-fra"> <!--Especifica el nombre del programa con el que se ha creado el documento.-->
+        <meta name="keywords" content="ejemplos, programación, html 5, etc."> <!--Serie de términos o palabras que sirven para establecer categorías 
+                                                                                en la cual el documento web puede ser incluido. Suele ser utilizada
+                                                                                por los motores de búsqueda para establecer búsquedas y categorías 
+                                                                                de los documentos.-->
+        <title>Ejercitacion 13</title>
+    </head>
+    <body>
+        <h1>Tabla de equipos confereaciones y paises.</h1>
+        <table border="1">
+            <caption>Equipos del Mundo</caption>
+            <tbody>
+                <thead>
+                    <th>Confederaciones</th>
+                    <th>Países</th>
+                    <th>Equipos</th>
+                </thead>
+                <tr><td><a href="https://www.concacaf.com/es/">Concacaf</a></td><td>México</td><td>América</td></tr>
+                
+                <tr><td rowspan="6"><a href="https://www.conmebol.com/">Conmebol</a></td><td rowspan="3">Argentina</td><td>River</td></tr>
+                <tr><td>Riestra</td></tr>
+                <tr><td>Quilmes</td></tr>
+
+                <tr><td rowspan="2">Brasil</td><td>Flamengo</td></tr>
+                <tr><td>Santos</td>></tr>
+
+                <tr><td>Uruguay</td><td>Peñarol</td></tr>
+
+                <tr><td rowspan="5"><a href="https://es.uefa.com/">Uefa</a></td><td rowspan="2">España</td><td>Real Madrid</td></tr>
+                <tr><td>Barcelona</td></tr>
+                <tr><td rowspan="3">Inglaterra</td><td>Manchester United</td></tr>
+                <tr><td>Liverpool</td></tr>
+                <tr><td>Arsenal</td></tr>
+            </tbody>
+        </table>
+    </body>
+
+</html>

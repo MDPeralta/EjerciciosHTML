@@ -1,0 +1,50 @@
+<!--[A.11] Tabla 2
+Confeccionar una tabla que muestre los nombres de al menos ocho periódicos y su nombre de dominio
+agrupados por países (al menos tres). En la primera columna disponer los nombres de países, expandir en fila
+de acuerdo a la cantidad de diarios de cada país.-->
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"> <!--Establece el juego de caracteres que utilizará el navegador-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Establece el área de visualización de la página en el navegador
+                                                                                width=device-width: hace que el ancho de la página coincida con 
+                                                                                el ancho de la pantalla del dispositivo.
+                                                                                initial-scale=1.0: establece el nivel de zoom inicial al 100%.-->
+        <meta name="application-name" content="Introducción a HTML 5"> <!--Define el nombre de la aplicación de la cual forma parte el documento-->
+        <meta name="author" content="UTN-fra"> <!--Establece el nombre del autor del documento-->
+        <meta name="description" content="Ejemplos de tags semánticos"> <!--Descripción del documento. Es utilizada por los motores de búsquedas.-->
+        <meta name="generator" content="UTN-fra"> <!--Especifica el nombre del programa con el que se ha creado el documento.-->
+        <meta name="keywords" content="ejemplos, programación, html 5, etc."> <!--Serie de términos o palabras que sirven para establecer categorías 
+                                                                                en la cual el documento web puede ser incluido. Suele ser utilizada
+                                                                                por los motores de búsqueda para establecer búsquedas y categorías 
+                                                                                de los documentos.-->
+        <title>Ejercitacion 11</title>
+    </head>
+    <body>
+        <h1>Periodico de paises</h1>
+        <table border="1">
+            <caption>Paises con sus respectivos periódicos y dominio</caption>
+            <tbody>
+                <thead>
+                    <th>Pais</th>
+                    <th>Nombre del Periódico</th>
+                    <th>Dominio del Periódico</th>
+                </thead>
+
+                <tr><td rowspan="3">Argentina</td><td>Clarin</td><td><a href="https://www.clarin.com/">www.clarin.com</a></td></tr>
+                <tr><td>La nacion</td><td><a href="https://www.lanacion.com.ar/">www.lanacion.com</a></td></tr>
+                <tr><td>Página 12</td><td><a href="https://www.pagina12.com.ar/" target="_blank">www.pagina12.com.ar</a></td></tr>
+                
+                <tr><td rowspan="2">España</td><td>El país</td><td><a href="https://elpais.com/?ed=es">www.elpais.com</a></td></tr>
+                <tr><td>El Mundo</td><td><a href="https://www.elmundo.es/">www.elmundo.com</a></td></tr>
+
+                <tr><td rowspan="3">México</td><td>El universal</td><td><a href="https://www.eluniversal.com.mx/">www.eluniversalmx.com</a></td></tr>
+                <tr><td>Milenio</td><td><a href="https://www.milenio.com/">www.elmileniomx.com</a></td></tr>
+                <tr><td>Reforma</td><td><a href="https://www.reforma.com/">www.reforma.com</a></td></tr>
+            </tbody>
+        </table>
+        
+    </body>
+
+</html>

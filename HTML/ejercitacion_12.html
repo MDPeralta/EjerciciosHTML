@@ -1,0 +1,58 @@
+<!--[A.12] Tabla 3
+Tomando como base el ejercicio anterior se pide crear una tabla cuyo título (<CAPTION>) sea “Equipos del
+mundo”. Definir como primera columna de encabezados las confederaciones, como segunda columna los
+países y como tercera columna los nombres de los equipos.
+El listado de Confederaciones son: Concacaf, Conmebol y Uefa.
+Mientras que los países serán: México – Argentina, Brasil, Uruguay – España, Inglaterra.
+Los equipos según los países de origen son: América – River, Riestra, Quilmes – Santos,
+Flamengo – Peñarol – Real Madrid, Barcelona – Manchester Utd., Liverpool, Arsenal.-->
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"> <!--Establece el juego de caracteres que utilizará el navegador-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Establece el área de visualización de la página en el navegador
+                                                                                width=device-width: hace que el ancho de la página coincida con 
+                                                                                el ancho de la pantalla del dispositivo.
+                                                                                initial-scale=1.0: establece el nivel de zoom inicial al 100%.-->
+        <meta name="application-name" content="Introducción a HTML 5"> <!--Define el nombre de la aplicación de la cual forma parte el documento-->
+        <meta name="author" content="UTN-fra"> <!--Establece el nombre del autor del documento-->
+        <meta name="description" content="Ejemplos de tags semánticos"> <!--Descripción del documento. Es utilizada por los motores de búsquedas.-->
+        <meta name="generator" content="UTN-fra"> <!--Especifica el nombre del programa con el que se ha creado el documento.-->
+        <meta name="keywords" content="ejemplos, programación, html 5, etc."> <!--Serie de términos o palabras que sirven para establecer categorías 
+                                                                                en la cual el documento web puede ser incluido. Suele ser utilizada
+                                                                                por los motores de búsqueda para establecer búsquedas y categorías 
+                                                                                de los documentos.-->
+        <title>Ejercitacion 12</title>
+    </head>
+    <body>
+        <h1>Tabla de equipos confereaciones y paises.</h1>
+        <table border="1">
+            <caption>Equipos del Mundo</caption>
+            <tbody>
+                <thead>
+                    <th>Confederaciones</th>
+                    <th>Países</th>
+                    <th>Equipos</th>
+                </thead>
+                <tr><td>Concaf</td><td>México</td><td>América</td></tr>
+                
+                <tr><td rowspan="6">Conmebol</td><td rowspan="3">Argentina</td><td>River</td></tr>
+                <tr><td>Riestra</td></tr>
+                <tr><td>Quilmes</td></tr>
+
+                <tr><td rowspan="2">Brasil</td><td>Flamengo</td></tr>
+                <tr><td>Santos</td>></tr>
+
+                <tr><td>Uruguay</td><td>Peñarol</td></tr>
+
+                <tr><td rowspan="5">Uefa</td><td rowspan="2">España</td><td>Real Madrid</td></tr>
+                <tr><td>Barcelona</td></tr>
+                <tr><td rowspan="3">Inglaterra</td><td>Manchester United</td></tr>
+                <tr><td>Liverpool</td></tr>
+                <tr><td>Arsenal</td></tr>
+            </tbody>
+        </table>
+    </body>
+
+</html>
